@@ -4,16 +4,22 @@ digraph ConflictGraph {
 	T1
 	T2
 	T1
-	T4
-	T2
-	T5
+	T3
+	T1
 	T3
 	T2
-	T4
-	T5
-	T1 -> T2 [label="A-(#1,#2)"]
-	T1 -> T4 [label="B-(#3,#6)"]
-	T2 -> T5 [label="D-(#7,#9)"]
-	T3 -> T2 [label="C-(#4,#5)"]
-	T4 -> T5 [label="E-(#8,#10)"]
+	T3
+	T2
+	T3
+	T2
+	T3
+	T2
+	T3
+	T1 -> T2 [label="A-(#2,#3)"]
+	T1 -> T3 [label="A-(#1,#8)"]
+	T1 -> T3 [label="A-(#2,#8)"]
+	T2 -> T3 [label="A-(#3,#8)"]
+	T2 -> T3 [label="B-(#4,#7)"]
+	T2 -> T3 [label="B-(#5,#6)"]
+	T2 -> T3 [label="B-(#5,#7)"]
 }

@@ -1,0 +1,16 @@
+digraph ConflictGraph {
+	graph [rankdir=LR ranksep=2]
+	node [color=lightblue style=filled]
+	T1
+	T2
+	T1
+	T3
+	T1
+	T3
+	T2
+	T3
+	T1 -> T2 [label="A-(#2,#4)"]
+	T1 -> T3 [label="A-(#1,#6)"]
+	T1 -> T3 [label="A-(#2,#6)"]
+	T2 -> T3 [label="A-(#4,#6)"]
+}
